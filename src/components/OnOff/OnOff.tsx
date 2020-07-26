@@ -2,10 +2,10 @@ import React, {useState} from "react";
 
 type PropsType = {
     on: boolean
-    onChange: (on: boolean)=> void
+    onChange: (on: boolean) => void
 }
 
-function OnOff(props: PropsType) {
+export function OnOff(props: PropsType) {
 
     const onStyle = {
         width: '30px',
@@ -49,4 +49,3 @@ function OnOff(props: PropsType) {
     )
 }
 
-export default OnOff;

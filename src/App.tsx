@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import Accordion from './components/Accordion/Accordion';
+import {Accordion} from './components/Accordion/Accordion';
 import {Rating, RatingValueType} from "./components/Rating/Rating";
-import UncontrolledAccordion from "./components/UncontolledAccordion/UncontrolledAccordion";
-import {UncontolledRating} from "./components/Rating/UncontolledRating";
-import OnOff from "./components/OnOff/OnOff";
-import UnControlledOnOff from './components/OnOff/UnControlledOnOff';
+import {UncontolledRating} from "./components/UncontrolledRating/UncontolledRating";
+import {OnOff} from "./components/OnOff/OnOff";
+import {UnControlledOnOff} from "./components/UncontrolledOnOff/UnControlledOnOff";
+import {UncontrolledAccordion} from "./components/UncontolledAccordion/UncontrolledAccordion";
 
 
 function App(props: any) {
@@ -30,20 +30,6 @@ function App(props: any) {
                 }}
             />
             <UncontrolledAccordion titleValue="Uncontrolled Accordion"/>
-
-
-            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
-            {/*<UncontolledRating/>*/}
-
-
-            {/*<UncontrolledAccordion titleValue="Second Accordion Title" />*/}
-            {/*<Accordion titleValue="Second Accordion Title" collapse={false}/>*/}
-            {/*<Rating value={0} />*/}
-            {/*<Rating value={1} />*/}
-            {/*<Rating value={2} />*/}
-            {/*<Rating value={3} />*/}
-            {/*<Rating value={4} />*/}
-            {/*<Rating value={5} />*/}
         </div>
     );
 }
