@@ -22,13 +22,13 @@ function App(props: any) {
 
             <UnControlledOnOff onChange={setSwitchOn}/> {/*Неконтролируемый*/}
             {switchOn.toString()}
-            <Accordion
-                titleValue="Controlled Accordion"
-                collapsed={accordionCollapsed}
-                onChange={() => {
-                    setAccordionCollapsed(!accordionCollapsed)
-                }}
-            />
+            {/*<Accordion*/}
+            {/*    titleValue="Controlled Accordion"*/}
+            {/*    collapsed={accordionCollapsed}*/}
+            {/*    onChange={() => {*/}
+            {/*        setAccordionCollapsed(!accordionCollapsed)*/}
+            {/*    }}*/}
+            {/*/>*/}
             <UncontrolledAccordion titleValue="Uncontrolled Accordion"/>
         </div>
     );

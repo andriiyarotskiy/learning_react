@@ -15,9 +15,9 @@ export const TrackValueOfUncontolledInput = () => {
         onChange={onChange}
     /> - {value} </>
 };
-export const GetValueOfUncontrolledInputByButtonPress = () => {
+export const GetValueOfUncontrolledInputByButtonPress = () => { // хук => UseRef
     const [value, setValue] = useState<string>('')
-    const inputRef = useRef<HTMLInputElement>(null) // хук => UseRef
+    const inputRef = useRef<HTMLInputElement>(null)
     const save = () => {
         const el = inputRef.current as HTMLInputElement
         setValue(el.value)
